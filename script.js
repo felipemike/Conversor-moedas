@@ -1,10 +1,11 @@
 function converter() {
 let moeda = document.getElementById('valor')
-let moedaDola = Number(moeda.value * 5)
+let valorNum = Number(moeda.value)
+let moedaDola = parseFloat(valorNum * 5.15)
 
 let valorFinal = document.getElementById('valorConvertido')
 
-valorFinal.innerHTML = `R$:${moedaDola}`
+valorFinal.innerHTML = `R$${moedaDola}`
 
     
 }
