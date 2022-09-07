@@ -1,8 +1,8 @@
 function converter() {
 
-let moeda = document.getElementById('valor')
-let valorNum = Number(moeda.value)
-let moedaDola = parseFloat(valorNum * 5.15)
+let moeda = parseFloat(document.getElementById('valor').value)
+
+let moedaDola = moeda * 5.15
 
 let valorFinal = document.getElementById('valorConvertido')
 
